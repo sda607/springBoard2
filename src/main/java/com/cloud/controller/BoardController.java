@@ -8,12 +8,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.filter.DelegatingFilterProxy;
 
 import com.cloud.domain.BoardVO;
 import com.cloud.service.BoardService;
 
-import oracle.jdbc.proxy.annotation.Post;
 
 @RequestMapping("/board/*")      //localhost:8080/board/aaa
 @Controller

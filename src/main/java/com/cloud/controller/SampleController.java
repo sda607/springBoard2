@@ -11,10 +11,15 @@ import lombok.extern.log4j.Log4j;
 @Controller
 public class SampleController {
 
+	/*
+	 * @GetMapping("/all") public void doAll() { log.info("모든 사용자 접근할 수 있음"); }
+	 */
 	@GetMapping("/all")
-	public void doAll() {
+	public String doAll() {
 		log.info("모든 사용자 접근할 수 있음");
+		return "/sample/all";
 	}
+	
 	@GetMapping("/member")
 	public void domember() {
 		log.info("로그인한 회원");
